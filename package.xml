@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>pal_gazebo_worlds</name>
+  <name>pal_gazebo_worlds_slmc</name>
   <version>2.0.40</version>
   <description>Simulation worlds for PAL robots.</description>
   <maintainer email="victor.lopez@pal-robotics.com">Victor Lopez</maintainer>

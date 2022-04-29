@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="simulator_type" default="gazebo"/> <!-- Define different types of simulators, i.e. gazebo, pal_physics, pal_physics_actuator -->
+
+  <arg name="robot" default="full_v2"/>
+
+  <!-- <arg name="world" value="$(find pal_gazebo_worlds)/worlds/simple_office.world"/> -->
+
+  <arg name="world_name" default="empty"/> <!-- Define name of the environment model -->
+
+
+  <!-- If we choose to start gazebo -->
+  <group if = "$(eval simulator_type == 'gazebo')">
+    <include file="$(find talos_gazebo)/launch/talos_gazebo.launch" >
+      <arg name="robot" value="$(arg robot)"/>
+      <arg name="world" value="$(arg world_name)"/>
+    </include>
+  </group>
+
+  <!-- If we choose to start pal simulator WITHOUT actuator dynamics -->
+  <group if = "$(eval simulator_type == 'pal_physics')">
+    <include file="$(find talos_pal_physics_simulator)/launch/talos_pal_physics_simulator.launch" >
+      <arg name="robot" value="$(arg robot)"/>
+      <arg name="world" value="$(find pal_gazebo_worlds_slmc)/worlds/$(arg world_name).world"/>
+    </include>
+  </group>
+
+  <!-- If we choose to start pal simulator WITH actuator dynamics -->
+  <group if = "$(eval simulator_type == 'pal_physics_actuator')">
+    <include file="$(find talos_pal_physics_simulator)/launch/talos_pal_physics_simulator_with_actuators.launch" >
+      <arg name="robot" value="$(arg robot)"/>
+      <arg name="world" value="$(find pal_gazebo_worlds_slmc)/worlds/$(arg world_name).world"/>
+    </include>
+  </group>
+
+
+    <!-- set initial condition for PAL simulation, needed when there will be collisions between the robot and the terrain after initialization-->
+    <!-- <rosparam param="default_floating_base_pose/position">[-0.3, 0.25, 1.2]</rosparam>
+    <rosparam param="default_floating_base_pose/orientation/x">0.0</rosparam>
+    <rosparam param="default_floating_base_pose/orientation/y">0.0</rosparam>
+    <rosparam param="default_floating_base_pose/orientation/z">0.0</rosparam>
+    <rosparam param="default_floating_base_pose/orientation/w">1.0</rosparam> -->
+
+</launch>

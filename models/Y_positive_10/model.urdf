@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<robot name="Y_positive_10">
+<!-- Used for fixing robot to Gazebo 'base_link' -->
+
+<link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="Y_positive_10__link"/>
+  </joint>
+
+  <link name="Y_positive_10__link">
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <collision>
+      <geometry>
+         <mesh filename="package://pal_gazebo_worlds/models/Y_positive_10/meshes/10_degree_slope.stl" scale="0.00999 0.00999 0.00999"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu1 value="1.0" />
+            <mu2 value="1.0" />
+            <kp  value="1e5" />
+            <kd  value="1e2" />
+            <maxVel  value="100.0" />
+            <minDepth  value="0.0" />
+            <dampingFactor>0.01</dampingFactor>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+    <visual>
+      <geometry>
+        <mesh filename="package://pal_gazebo_worlds/models/Y_positive_10/meshes/10_degree_slope.stl" scale="0.00999 0.00999 0.00999"/>
+      </geometry>
+      <material name="white">
+      </material>
+    </visual>
+  </link>
+
+
+
+</robot>
