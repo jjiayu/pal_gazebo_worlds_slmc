@@ -27,10 +27,5 @@
     <include>
       <uri>model://ground_plane</uri>
     </include>
-    <!-- A bunch of chairs -->
-    <include>
-          <uri>model://Y_positive_10_lifted</uri>
-      <pose>1.0 0 0 0 0 0.0</pose>
-    </include>
   </world>
 </sdf>
