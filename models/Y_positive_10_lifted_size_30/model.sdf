@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <sdf version="1.4">
-  <model name="Y_positive_10">
+  <model name="Y_positive_10_lifted_size_30">
     <link name="link">
       <pose>0 0 0 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://Y_positive_10/meshes/10_degree_slope.stl</uri>
+            <uri>model://Y_positive_10_lifted_size_30/meshes/10_degree_slope_lifted_size_30.stl</uri>
             <scale>0.00999 0.00999 0.00999</scale>
           </mesh>
         </geometry>
@@ -14,7 +14,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://Y_positive_10/meshes/10_degree_slope.stl</uri>
+            <uri>model://Y_positive_10_lifted_size_30/meshes/10_degree_slope_lifted_size_30.stl</uri>
             <scale>0.00999 0.00999 0.00999</scale>
           </mesh>
         </geometry>

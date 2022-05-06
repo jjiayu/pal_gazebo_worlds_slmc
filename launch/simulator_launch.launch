@@ -12,7 +12,7 @@
 
   <!-- If we choose to start gazebo -->
   <group if = "$(eval simulator_type == 'gazebo')">
-    <include file="$(find talos_gazebo)/launch/talos_gazebo.launch" >
+    <include file="$(find pal_gazebo_worlds_slmc)/launch/talos_gazebo.launch" >  <!-- in this launch file, we point to a custmized talos_gazebo launch file, and it loads a different pal_gazebo.luanch which add world file world in this packages to tne environment variable -->
       <arg name="robot" value="$(arg robot)"/>
       <arg name="world" value="$(arg world_name)"/>
     </include>
