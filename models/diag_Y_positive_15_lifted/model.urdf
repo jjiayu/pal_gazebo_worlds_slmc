@@ -1,22 +1,22 @@
 <?xml version="1.0" ?>
-<robot name="Y_positive_10_lifted">
+<robot name="diag_Y_positive_15_lifted">
 <!-- Used for fixing robot to Gazebo 'base_link' -->
 
 <link name="world"/>
 
   <joint name="fixed" type="fixed">
     <parent link="world"/>
-    <child link="Y_positive_10_lifted__link"/>
+    <child link="diag_Y_positive_15_lifted__link"/>
   </joint>
 
-  <link name="Y_positive_10_lifted__link">
+  <link name="diag_Y_positive_15_lifted__link">
     <inertial>
       <mass value="10"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
     <collision>
       <geometry>
-         <mesh filename="package://pal_gazebo_worlds/models/Y_positive_10_lifted/meshes/10_degree_slope_lifted.stl" scale="0.00999 0.00999 0.00999"/>
+         <mesh filename="package://pal_gazebo_worlds/models/diag_Y_positive_15_lifted/meshes/diag_Y_positive_15_degree_slope_lifted.stl" scale="0.00999 0.00999 0.00999"/>
       </geometry>
       <surface>
         <friction>
@@ -34,7 +34,7 @@
     </collision>
     <visual>
       <geometry>
-        <mesh filename="package://pal_gazebo_worlds/models/Y_positive_10_lifted/meshes/10_degree_slope_lifted.stl" scale="0.00999 0.00999 0.00999"/>
+        <mesh filename="package://pal_gazebo_worlds/models/diag_Y_positive_15_lifted/meshes/diag_Y_positive_15_degree_slope_lifted.stl" scale="0.00999 0.00999 0.00999"/>
       </geometry>
       <material name="white">
       </material>

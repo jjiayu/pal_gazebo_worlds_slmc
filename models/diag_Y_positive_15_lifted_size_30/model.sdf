@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="diag_Y_positive_15_lifted_size_30">
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://diag_Y_positive_15_lifted_size_30/meshes/diag_Y_positive_15_degree_slope_lifted_size_30.stl</uri>
+            <scale>0.00999 0.00999 0.00999</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://diag_Y_positive_15_lifted_size_30/meshes/diag_Y_positive_15_degree_slope_lifted_size_30.stl</uri>
+            <scale>0.00999 0.00999 0.00999</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
