@@ -30,6 +30,14 @@
       <uri>model://ground_plane</uri>
     </include>
 
+    <!-- Place the front bar -->
+    <include>
+      <name>font_bar</name>
+      <static>1</static>
+      <uri>model://front_bar</uri>
+      <pose> 0.15 0.0 0.0 0.0 0.0 0.0</pose>
+    </include>
+
     <!-- Place a Block -->
     <include>
       <name>block_2</name>

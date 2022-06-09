@@ -36,10 +36,16 @@
 
 
   <!-- set initial condition for PAL simulation, needed when there will be collisions between the robot and the terrain after initialization -->
-  <!-- <rosparam param="default_floating_base_pose/position">[-0.3, 0.25, 1.2]</rosparam>
-  <rosparam param="default_floating_base_pose/orientation/x">0.0</rosparam>
+  <!-- <rosparam param="default_floating_base_pose/position">[0.0, 0.5, 1.2]</rosparam> -->
+  <!-- [0.0, 0.006125, 1.2] -->
+  <!-- <rosparam param="default_floating_base_pose/orientation/x">0.0</rosparam>
   <rosparam param="default_floating_base_pose/orientation/y">0.0</rosparam>
   <rosparam param="default_floating_base_pose/orientation/z">0.0</rosparam>
   <rosparam param="default_floating_base_pose/orientation/w">1.0</rosparam> -->
+
+  <!-- <rosparam param="default_floating_base_pose/orientation/x">0.0</rosparam>
+  <rosparam param="default_floating_base_pose/orientation/y">0.0</rosparam>
+  <rosparam param="default_floating_base_pose/orientation/z">0.13052619</rosparam>
+  <rosparam param="default_floating_base_pose/orientation/w">0.99144486</rosparam> -->
 
 </launch>
