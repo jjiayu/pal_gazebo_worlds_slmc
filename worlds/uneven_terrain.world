@@ -51,7 +51,7 @@
       <name>block_3</name>
       <static>1</static>
       <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.30999999999999994 -0.15 0.0 0.0 0.0 3.141592653589793</pose>
+      <pose> 0.61 -0.15 0.0 0.0 0.0 3.141592653589793</pose>
     </include>
 
     <!-- Place a Block -->
@@ -59,7 +59,7 @@
       <name>block_4</name>
       <static>1</static>
       <uri>model://diag_Y_positive_10_lifted_size_30</uri>
-      <pose> 0.61 0.15 0.0 0.0 0.0 4.71238898038469</pose>
+      <pose> 0.91 0.15 0.0 0.0 0.0 4.71238898038469</pose>
     </include>
 
     <!-- Place a Block -->
@@ -67,7 +67,7 @@
       <name>block_5</name>
       <static>1</static>
       <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.61 -0.15 0.0 0.0 0.0 0.0</pose>
+      <pose> 1.21 -0.15 0.0 0.0 0.0 0.0</pose>
     </include>
 
     <!-- Place a Block -->
@@ -75,7 +75,7 @@
       <name>block_6</name>
       <static>1</static>
       <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.91 0.15 0.0 0.0 0.0 3.141592653589793</pose>
+      <pose> 1.5100000000000002 0.15 0.0 0.0 0.0 3.141592653589793</pose>
     </include>
 
     <!-- Place a Block -->
@@ -83,7 +83,7 @@
       <name>block_7</name>
       <static>1</static>
       <uri>model://diag_Y_positive_10_lifted_size_30</uri>
-      <pose> 0.91 -0.15 0.0 0.0 0.0 1.5707963267948966</pose>
+      <pose> 1.81 -0.15 0.0 0.0 0.0 1.5707963267948966</pose>
     </include>
 
     <!-- Place a Block -->
@@ -91,7 +91,7 @@
       <name>block_8</name>
       <static>1</static>
       <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 1.21 0.15 0.0 0.0 0.0 0.0</pose>
+      <pose> 2.1100000000000003 0.15 0.0 0.0 0.0 0.0</pose>
     </include>
 
     <!-- Place a Block -->
@@ -99,7 +99,7 @@
       <name>block_9</name>
       <static>1</static>
       <uri>model://diag_Y_positive_10_lifted_size_30</uri>
-      <pose> 1.21 -0.15 0.0 0.0 0.0 0.0</pose>
+      <pose> 2.41 -0.15 0.0 0.0 0.0 0.0</pose>
     </include>
 
   </world>
