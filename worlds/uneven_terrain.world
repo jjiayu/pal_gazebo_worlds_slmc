@@ -30,45 +30,69 @@
       <uri>model://ground_plane</uri>
     </include>
 
-    <!-- Place the front bar -->
-    <include>
-      <name>font_bar</name>
+    <!-- Place a (flat) Block -->
+      <model name="block_6">
+      <pose> 0.86 0.15 0.0205 0.0 0.0 0.0</pose>
       <static>1</static>
-      <uri>model://front_bar</uri>
-      <pose> 0.12000000000000001 0.0 -0.043 0.0 0.0 0.0</pose>
-    </include>
-
-    <!-- Place a Block -->
-    <include>
-      <name>block_2</name>
+      <link name="block_6">
+      <inertial>
+      <mass>1.0</mass>
+      <inertia>
+        <ixx>1.0</ixx>
+        <ixy>0.0</ixy>
+        <ixz>0.0</ixz>
+        <iyy>1.0</iyy>
+        <iyz>0.0</iyz>
+        <izz>1.0</izz>
+        </inertia>
+        </inertial>
+        <collision name="collision">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </collision>
+        <visual name="visual">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </visual>
+      </link>
+      </model>
+    <!-- Place a (flat) Block -->
+      <model name="block_7">
+      <pose> 0.86 -0.15 0.0205 0.0 0.0 0.0</pose>
       <static>1</static>
-      <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.28 0.15 -0.043 0.0 0.0 4.71238898038469</pose>
-    </include>
-
-    <!-- Place a Block -->
-    <include>
-      <name>block_3</name>
-      <static>1</static>
-      <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.28 -0.15 -0.043 0.0 0.0 1.5707963267948966</pose>
-    </include>
-
-    <!-- Place a Block -->
-    <include>
-      <name>block_4</name>
-      <static>1</static>
-      <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.58 0.15 -0.043 0.0 0.0 4.71238898038469</pose>
-    </include>
-
-    <!-- Place a Block -->
-    <include>
-      <name>block_5</name>
-      <static>1</static>
-      <uri>model://Y_positive_10_lifted_size_30</uri>
-      <pose> 0.58 -0.15 -0.043 0.0 0.0 1.5707963267948966</pose>
-    </include>
-
+      <link name="block_7">
+      <inertial>
+      <mass>1.0</mass>
+      <inertia>
+        <ixx>1.0</ixx>
+        <ixy>0.0</ixy>
+        <ixz>0.0</ixz>
+        <iyy>1.0</iyy>
+        <iyz>0.0</iyz>
+        <izz>1.0</izz>
+        </inertia>
+        </inertial>
+        <collision name="collision">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </collision>
+        <visual name="visual">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </visual>
+      </link>
+      </model>
   </world>
 </sdf>
