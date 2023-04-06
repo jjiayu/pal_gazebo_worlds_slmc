@@ -94,5 +94,69 @@
         </visual>
       </link>
       </model>
+    <!-- Place a (flat) Block -->
+      <model name="block_8">
+      <pose> 1.1600000000000001 0.15 0.0205 0.0 0.0 0.0</pose>
+      <static>1</static>
+      <link name="block_8">
+      <inertial>
+      <mass>1.0</mass>
+      <inertia>
+        <ixx>1.0</ixx>
+        <ixy>0.0</ixy>
+        <ixz>0.0</ixz>
+        <iyy>1.0</iyy>
+        <iyz>0.0</iyz>
+        <izz>1.0</izz>
+        </inertia>
+        </inertial>
+        <collision name="collision">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </collision>
+        <visual name="visual">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </visual>
+      </link>
+      </model>
+    <!-- Place a (flat) Block -->
+      <model name="block_9">
+      <pose> 1.1600000000000001 -0.15 0.0205 0.0 0.0 0.0</pose>
+      <static>1</static>
+      <link name="block_9">
+      <inertial>
+      <mass>1.0</mass>
+      <inertia>
+        <ixx>1.0</ixx>
+        <ixy>0.0</ixy>
+        <ixz>0.0</ixz>
+        <iyy>1.0</iyy>
+        <iyz>0.0</iyz>
+        <izz>1.0</izz>
+        </inertia>
+        </inertial>
+        <collision name="collision">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </collision>
+        <visual name="visual">
+        <geometry>
+          <box>
+          <size>0.3 0.3 0.041</size>
+          </box>
+        </geometry>
+        </visual>
+      </link>
+      </model>
   </world>
 </sdf>
